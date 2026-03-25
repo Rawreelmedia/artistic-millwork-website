@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Gallery | Artistic Mill Work</title>
+    <meta name="description" content="Browse our portfolio of custom millwork projects including kitchens, doors, staircases, and architectural details.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">⚒</span>
+                <span class="logo-text">Artistic<span>Mill Work</span></span>
+            </a>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="btn-nav">Get a Quote</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Our Work</h1>
+            <p>Browse our portfolio of custom millwork projects</p>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-page" style="padding: 80px 0;">
+        <div class="container">
+            <!-- Filters -->
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="kitchen">Kitchens</button>
+                <button class="filter-btn" data-filter="doors">Doors</button>
+                <button class="filter-btn" data-filter="stairs">Staircases</button>
+                <button class="filter-btn" data-filter="trim">Trim & Molding</button>
+                <button class="filter-btn" data-filter="builtin">Built-Ins</button>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="gallery-full-grid">
+                <!-- Kitchen Projects -->
+                <div class="gallery-full-item" data-category="kitchen">
+                    <div class="image-placeholder">
+                        <span>Modern Kitchen</span>
+                        <small>Add: kitchen-1.jpg</small>
+                    </div>
+                    <div class="gallery-overlay">
+                        <h4>Modern Shaker Kitchen</h4>
+                        <p>Miami Beach, FL</p>
+                    </div>
+                </div>
+                <div class="gallery-full-item" data-category="kitchen">
+                    <div class="image-placeholder">
+                        <span>Traditional Kitchen</span>
+                        <small>Add: kitchen-2.jpg</small>
+                    </div>
+                    <div class="gallery-overlay">
+                        <h4>Traditional Raised Panel</h4>
+                        <p>Coral Gables, FL</p>
+                    </div>
+                </div>
+                <div class="gallery-full-item" data-category="kitchen">
+                    <div class="image-placeholder">
+                        <span>Luxury Kitchen</span>
+                        <small>Add: kitchen-3.jpg</small>
+                    </div>
+                    <div class="gallery-overlay">
+                        <h4>Waterfront Luxury Kitchen</h4>
+                        <p>Key Biscayne, FL</p>
+                    </div>
+                </div>
+
+                <!-- Door Projects -->
+                <div class="gallery-full-item" data-category="doors">
+                    <div class="image-placeholder">
+                        <span>Entry Door</span>
+                        <small>Add: door-1.jpg</small>
+                    </div>
+                    <div class="gallery-overlay">
+                        <h4>Mahogany Entry Door</h4>
+                        <p>Pinecrest, FL</p>
+                    </div>
+                </div>
+                <div class="gallery-full-item" data-category="doors">
+                    <div class="image-placeholder">
+                        <span>French Doors</span>
+                        <small>Add: door-2.jpg</small>
+                    </div>
+                    <div class="gallery-overlay">
+                        <h4>Custom French Doors</h4>
+                        <p>South Miami, FL</p>
+                    </div>
+                </div>
+                <div class="gallery-full-item" data-category="doors">
+                    <div class="image-placeholder">
+                        <span>Interior Doors</span>
+                        <small>Add: door-3.jpg</small>
+                    </div>
+                    <div class="gallery-overlay">
+                        <h4>5-Panel Interior Set</h4>
+                        <p>Coconut Grove, FL</p>
+                    </div>
+                </div>
+
+                <!-- Staircase Projects -->
+                <div class="gallery-full-item" data-category="stairs">
+                    <div class="image-placeholder">
+                        <span>Grand Staircase</span>
+                        <small>Add: stairs-1.jpg</small>
+                    </div>
+                    <div class="gallery-overlay">
+                        <h4>Curved Grand Staircase</h4>
+                        <p>Brickell, FL</p>
+                    </div>
+                </div>
+                <div class="gallery-full-item" data-category="stairs">
+                    <div class="image-placeholder">
+                        <span>Modern Staircase</span>
+                        <small>Add: stairs-2.jpg</small>
+                    </div>
+                    <div class="gallery-overlay">
+                        <h4>Floating Oak Treads</h4>
+                        <p>Design District, FL</p>
+                    </div>
+                </div>
+                <div class="gallery-full-item" data-category="stairs">
+                    <div class="image-placeholder">
+                        <span>Traditional Staircase</span>
+                        <small>Add: stairs-3.jpg</small>
+                    </div>
+                    <div class="gallery-overlay">
+                        <h4>Classic Turned Balusters</h4>
+                        <p>Coral Gables, FL</p>
+                    </div>
+                </div>
+
+                <!-- Trim Projects -->
+                <div class="gallery-full-item" data-category="trim">
+                    <div class="image-placeholder">
+                        <span>Crown Molding</span>
+                        <small>Add: trim-1.jpg</small>
+                    </div>
+                    <div class="gallery-overlay">
+                        <h4>Coffered Ceiling</h4>
+                        <p>Fisher Island, FL</p>
+                    </div>
+                </div>
+                <div class="gallery-full-item" data-category="trim">
+                    <div class="image-placeholder">
+                        <span>Wainscoting</span>
+                        <small>Add: trim-2.jpg</small>
+                    </div>
+                    <div class="gallery-overlay">
+                        <h4>Full Wall Wainscoting</h4>
+                        <p>Pinecrest, FL</p>
+                    </div>
+                </div>
+                <div class="gallery-full-item" data-category="trim">
+                    <div class="image-placeholder">
+                        <span>Fireplace Mantel</span>
+                        <small>Add: trim-3.jpg</small>
+                    </div>
+                    <div class="gallery-overlay">
+                        <h4>Custom Fireplace Surround</h4>
+                        <p>Miami, FL</p>
+                    </div>
+                </div>
+
+                <!-- Built-In Projects -->
+                <div class="gallery-full-item" data-category="builtin">
+                    <div class="image-placeholder">
+                        <span>Library</span>
+                        <small>Add: builtin-1.jpg</small>
+                    </div>
+                    <div class="gallery-overlay">
+                        <h4>Floor-to-Ceiling Library</h4>
+                        <p>Coconut Grove, FL</p>
+                    </div>
+                </div>
+                <div class="gallery-full-item" data-category="builtin">
+                    <div class="image-placeholder">
+                        <span>Entertainment Center</span>
+                        <small>Add: builtin-2.jpg</small>
+                    </div>
+                    <div class="gallery-overlay">
+                        <h4>Media Room Built-In</h4>
+                        <p>Aventura, FL</p>
+                    </div>
+                </div>
+                <div class="gallery-full-item" data-category="builtin">
+                    <div class="image-placeholder">
+                        <span>Home Office</span>
+                        <small>Add: builtin-3.jpg</small>
+                    </div>
+                    <div class="gallery-overlay">
+                        <h4>Executive Home Office</h4>
+                        <p>Bal Harbour, FL</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Start Your Project?</h2>
+                <p>Let's create something beautiful together.</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-white">Get Free Quote</a>
+                    <a href="tel:+13055551234" class="btn btn-outline-white">Call (305) 555-1234</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <span class="logo-icon">⚒</span>
+                        <span class="logo-text">Artistic<span>Mill Work</span></span>
+                    </a>
+                    <p>Premium custom millwork and fine woodworking serving South Florida since 1999.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">FB</a>
+                        <a href="#" aria-label="Instagram">IG</a>
+                        <a href="#" aria-label="Pinterest">PIN</a>
+                        <a href="#" aria-label="Houzz">HOUZZ</a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html#doors">Custom Doors</a></li>
+                        <li><a href="services.html#cabinetry">Fine Cabinetry</a></li>
+                        <li><a href="services.html#trim">Architectural Trim</a></li>
+                        <li><a href="services.html#stairs">Staircases</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <p>📍 1234 Craftsman Way<br>Miami, FL 33130</p>
+                    <p>📞 (305) 555-1234</p>
+                    <p>✉️ info@artisticmillwork.com</p>
+                    <p>🕐 Mon-Fri: 8am - 5pm</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Artistic Mill Work. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
